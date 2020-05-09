@@ -10,4 +10,10 @@ microservice:
   order-service:
      endpoints:
         endpoint:
+         uri: hhttp://ORDER-SERVICE/order/bookorder 
+         
+microservice:
+  payment-service:
+     endpoints:
+        endpoint:
          uri: http://PAYMENT-SERVICE/payment/dopayment
