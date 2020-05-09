@@ -1,16 +1,3 @@
-spring:
-  cloud:
-    gateway:
-      routes:
-      - id: order-service
-        uri: lb://ORDER-SERVICE
-        predicates:
-         - Path=/order/**
-      - id: payment-service
-        uri: lb://PAYMENT-SERVICE
-        predicates:
-         - Path=/payment/**
-         
 eureka:
   client:
     register-with-eureka: true
