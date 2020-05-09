@@ -4,17 +4,6 @@ spring:
       uri: http://localhost:8888
       
       
-microservice:
-  ORDER-SERVICE:
-     endpoints:
-        endpoint:
-         uri: http://ORDER-SERVICE/order/bookorder 
-  PAYMENT-SERVICE:
-     endpoints:
-        endpoint:
-         uri: http://PAYMENT-SERVICE/payment/dopayment
-
-
 eureka:
   client:
     register-with-eureka: true
